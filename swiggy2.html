@@ -1,0 +1,2453 @@
+<html>
+    <head>
+        <title>swiggy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .headContainer{
+            width: 100%;
+            background-color: antiquewhite;
+            margin: 0 auto;
+           
+
+        }
+        .container{
+            
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .navContainer{
+            
+            background-color:white;
+            position: fixed;
+            
+            display: flex;
+            
+            
+            padding: 15px 0;
+            z-index: 1;
+            width: 100%;
+
+        }
+        .logo{
+            margin-left: 150px;
+        }
+        .logo img{
+            position: relative;
+            border-radius: 15px;
+            height: 45px;
+            width: 45px;
+            transition: transform 0.3s ease;
+        }
+        .logo img:hover{
+            transform: scale(1.20);
+        }
+        .navlist ul li{
+             margin-left: 50px;
+        }
+        .navlist a{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        .navlist ul{
+            display: flex;
+            list-style: none;
+        } 
+        .navlist ul li a sup{
+            color: orange;
+        }
+        .navlist ul li a:hover{
+            color: orangered;
+        }
+        .dropDown{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        
+        label,a ,h3 ,h2 ,h1{
+            
+            
+
+            font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:800;
+            font-style: normal;
+            font-variation-settings:
+            "GRAD" 0;
+
+        }
+
+       
+        .dropDown:hover{
+            color: orangered;
+           
+
+        }
+        .dropDown label:hover{
+            border-color: orangered;
+        }
+        .dropDown select{
+            opacity: 0.4;
+            width: 300px;
+            
+        }
+        .dropDown label{
+            border-bottom: 2px solid black;
+        }
+        .scroll img{
+            height: 180px;
+            margin-left: 15px;
+            
+        }
+        .scroll{
+            padding-top: 100px;
+        }
+        .line{
+            height: 2px;
+            background-color:rgb(218, 210, 210)
+        }
+        .card{
+            margin-top: 40px;
+            width: 250px;
+            overflow: hidden;
+            transition: transform 0.3s ease,box-shadow 0.3s ease ;
+             
+
+        }
+        .card:hover{
+            transform: scale(1.05);
+            
+        }
+        .image {
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/3/724c1f4c-da2b-4140-9929-cd47c1747b3d_334355.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image2 {
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/17/2ae66bad-edeb-4a91-a18f-7a8fee90ea7d_857384.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image3 {
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kdqyks4icf1y6ysfmxcp');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image4 {
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/19/92ff288d-e8eb-4492-ae4f-4a778d2abe2e_410401.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image5 {
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/d8657a5a-e134-42ce-975a-f2038743ba5d_856913.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image6 {
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/f070323750b77547608c09a881fb2b71');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image7{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/9/3/76a974e3-3993-4bad-b5ad-234aef764b04_1194358.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image8{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/h5bjgvy7zqpcveulhhc1');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image9{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/53185382-9f4f-4e97-9df6-e17a360c99ea_717531.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image10{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/15/6129106a-cf6e-4640-ae40-56096873d3ef_468682.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image11{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/29/84c20fc6-d97d-4451-b489-fa3286dcf386_365616.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image12{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/26/64097150-0192-4930-90a6-a5c0d150eabe_1161699.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image13{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/b8ac68a6-dd71-4344-8293-55a3c0b89576_1005858.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image14{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/27/3439b908-95d7-4941-aab1-2b8a7b761fcd_963762.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+         .image15{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/5/14/601eabbf-883b-43a9-af59-ce4f9fa50e53_1095354.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image16{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/31/c7013dd7-f8c4-418c-b39f-c175774317ed_935424.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image17{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1b0a9f247600e1ac5b1a277500ce73dd');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image18{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/dbcc40008450546fb34e16037840177c');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image19{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/imjdsanquorq1th6jwwv');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image20{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/30/29dbd09c-5b9c-46f4-b7a7-af5967071eb8_481481.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image21{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1a8dfa8b2a73ddf7c6193465ab24c898');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image22{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kt3g4fdj7wiz65kknxxk');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image23{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/w01lvrofquazbt49kpjs');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image24{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/iqphgvfrleoiogwb8i2d');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image25{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/4/17d34e28-1272-4a35-ac9b-5573168e2d45_231897%20(1).jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image26{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/46ffccf023ea6bedf5b3ba68ea8600ff');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image27{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/lwrgtjvcogz6ebo3s9bl');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image28{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/46ffccf023ea6bedf5b3ba68ea8600ff');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image29{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/10e47ca50f6b4106d398818aaf4f5a73');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image30{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/8/21/3b385ead-a527-40e3-96a9-1ed538d4849f_336574.JPG');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image31{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/gkaknas4jbkmpdmon7zx');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image32{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/dyy2e2kstsqbwny69up2');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image33{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/2/98febc2c-740d-435f-81f1-bf4fbea5ca9e_376520.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image34{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/8/28/28a8b6ab-4293-4b6b-bdd3-9a31d911d5f4_581995%20(1).jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image35{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/1/5b12b2c8-b34a-4640-ae59-d997108fef9d_1101251.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image36{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ykakusceismorveebrhi');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image37{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/pmnzbmxok9mtcmfdjlkx');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image38{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/nbcyjurq2qoxdztvibxg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+           
+            
+        }
+        .image39{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/1/ae3da2d7-65d6-4c69-826c-b22e01b83760_1243063.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+           
+            
+        }
+        .image40{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/27/541d5cd6-65d6-4253-a40a-ba14deff1d2b_1129139.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+           
+            
+        }
+        .image41{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/goubtkur0qpenqa2qn6y');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+           
+            
+        }
+        .image42{
+            border-radius: 15px;
+            height: 180px;
+            background-image:url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/5/64cbb721-7bdb-4c42-af48-611543e7ae32_1223966.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+           
+            
+        }
+        .image43{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/lsy1awtghh0ida9axppc');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image44{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/fqyam7myzigqdxn9smfq');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image45{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/15/dd0c310c-691b-4916-9c05-9035ec0f3b63_909862.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image46{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/20/969522f8-176c-442b-9c6a-dce02a068dc2_1011896.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image47{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2025/11/1/2b3d72f1-ddfb-493c-b5a0-629d62524289_1250956.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image48{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/n3d4cf77iguoh6surw9o');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image49{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/19/b3e41bd7-801d-4cb4-a113-15d8a5c8401f_954435%20(1).jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image50{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/amwls3cshehk41mrchtd');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+         .image51{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/7/3e886796-4bb4-42b2-9493-7cef25b55481_904882.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image52{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/17/40d22711-8bed-4861-ae71-b8467bfae055_1149421.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image53{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/19/a9837326-aced-4e0f-9189-4a9f8ef1fdd5_1151368.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .image54{
+            border-radius: 15px;
+            height: 180px;
+            background-image: url('https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/8/a72ea87f-519e-4e86-85aa-6c22c3f6f6eb_938835.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: antiquewhite;
+            overflow: hidden;
+            filter: grayscale(1);
+        }
+        .boxHead{
+            margin-left: 60px;
+            margin-top: 50px;
+        }
+        
+
+
+        .textBottom{
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            font-weight: 800;
+            font-size: 18px;
+            z-index: 1;
+            padding-left: 8px;
+            font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            
+            font-style: normal;
+            font-variation-settings:
+            "GRAD" 0;
+        }
+        .marginCard{
+            margin: 0px;
+            
+        }
+        .cntCard{
+            margin-top: 20px;
+        }
+        .gradient{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+
+        }
+        .cntCard p{
+             font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:200;
+            font-style: normal;
+            font-variation-settings:
+            "GRAD" 0;
+            opacity: 0.5;
+        }
+        .cardContainer{
+            display: flex;
+            margin-left: 50px;
+        }
+        .card1{
+            width: 25%;
+        }
+        .card2{
+            width: 25%;
+        }
+        .cardContainer3{
+            display: flex;
+        }
+        .boxCoontainer{
+            
+            margin-left: 60px;
+            margin-top: 40px;
+           
+        }
+        .boxCoontainer1{
+            display: flex;
+        }
+
+        .box1{
+            width: 25%;
+        }
+        .box2{
+            width: 25%;
+        }
+        
+    
+        .bxcnt h3{
+           
+            margin-top: 10px;
+            color: rgb(65, 65, 65);
+        }
+        .margnCard{
+             font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:200;
+            font-style: normal;
+            font-variation-settings:
+            "GRAD" 0;
+            opacity: 0.9;
+            text-align: center;
+            padding-top: 15px;
+
+
+
+            border-radius: 10px;
+            border: 1px solid rgb(205, 205, 205);
+            width: 220;
+            height: 60px;
+        }
+        .boxContainer{
+            display: flex;
+        }
+        .line2{
+            height: 1px;
+            background-color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .container2{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(239, 238, 238);
+        }
+        .footer{
+             width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+
+        }
+        .container2 h2{
+            color: rgb(43, 42, 42);
+            margin-left: 100px;
+            margin-top: 30px;
+
+        }
+        .footHead{
+            display: flex;
+        }
+        .rightHead{
+            width: 30%;
+        }
+        .rightHead img{
+            width: 400px;
+        }
+       .footerImg img{
+            margin-top: 10px;
+            margin-bottom: 0px;
+            border-radius: 15px;
+            height: 50px;
+            width: 45px;
+       }
+       .footerImg{
+        display: flex;
+        
+       
+       }
+       .footerImg h1{
+        color: orangered;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+       }
+       .fLIst1 p{
+       
+        font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:200;
+            font-style: normal;
+            font-variation-settings:
+            "GRAD" 0;
+            opacity: 0.5;
+       }
+       .footerflex{
+        display: flex;
+       }
+       .fLIst1{
+        width: 29%;
+       }
+       .fLIst2{
+        width: 17%;
+        
+       }
+       .fLIst3{
+        width: 17%;
+       }
+       .fLIst4{
+        width: 17%;
+       }
+       .fLIst5{
+        width: 17%;
+       }
+       .footerflex ul li{
+        font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:200;
+            font-style: normal;
+            font-variation-settings:
+            "GRAD" 0;
+            opacity: 0.5;
+            list-style: none;
+            padding: 1%;
+            padding-top: 10px;
+
+       }
+       .footerflex h3{
+        margin-left: 40px;
+       }
+       .footerContent{
+        margin-top: 100px;
+       }
+
+
+       @media screen and (max-width: 600px) {
+        .cardContainer{
+            display: block;
+        }
+        .boxCoontainer1{
+            display: block;
+        }
+        .container2 h2{
+            margin-left: 5%;
+        }
+        .footHead{
+            display: block;
+        }
+        .fLIst1{
+        width: 33%;
+        
+       }
+       .fLIst2{
+        width: 33%;
+        margin-left: 8%;
+        
+       }
+       .fLIst3{
+        width: 50%;
+         margin-left: 8%;
+       }
+       .fLIst4{
+        width: 50%;
+         margin-left: 8%;
+       }
+       .fLIst5{
+        width: 50%;
+         margin-left: 8%;
+       }
+       .footerflex{
+        display: block;
+        margin-left: 20%;
+       }
+       .card{
+        width: 350px;
+       }
+
+       }
+       
+
+    </style>
+   
+    <body>
+       
+            <header class="headContainer">
+                
+                
+        <div class="navContainer">
+            <div class="logo">
+                <a href="swiggy"><img src="assets\img\Screenshot 2026-01-02 144342.png" alt="swiggy"></a>
+                
+
+            </div>
+            <div class="dropDown">
+                <label for="location">other</label>
+                    <select name="location" id="location">
+                      <option value="cherpulasery,palakad,kerala">cherpulasery,palakad,kerala</option>
+                      <option value="painkulam,thrissur,kerala">painkulam,thrissur,kerala</option>
+                      <option value="vallathol,thrissur,kerala">vallathol,thrissur,kerala</option>
+                      <option value="manapadi,thrissur,kerala">manapadi,thrissur,kerala</option>
+                    </select>
+
+            </div>
+            <div class="navList">
+                <ul class="list">
+                    <li><a href="corporate">Swiggy corporate</a></li>
+                    <li><a href="search">Search</a></li>
+                    <li><a href="offers">Offers<sup>New</sup></a></li>
+                    <li><a href="help">Help</a></li>
+                    <li><a href="sign">Sign in</a></li>
+                    <li><a href="cart">Cart</a></li>
+
+                </ul>
+
+            </div>
+            </div>
+           
+        
+        </header>
+         <div class="container">
+        <section class="scroll">
+            <div class="scrollText">
+                <h3>What's on your mind?</h3>
+
+            </div>
+            <div class="images">
+                <img src="assets\img\awg1.avif" alt="biriyani">
+                <img src="assets\img\swg2.avif" alt="burger">
+                <img src="assets\img\swg3.avif" alt="cake">
+                <img src="assets\img\swg4.avif" alt="pizzas">
+                <img src="assets\img\swg5.avif" alt="rolls">
+                <img src="assets\img\swg6.avif" alt="tea">
+                <img src="assets\img\swg7.avif" alt="dosa">
+            </div>
+
+        </section>
+        <div class="line"></div>
+
+        <section class="cardScroll">
+            <div class="bold"><h2>Top restaurant chains in Bangalore</h2></div>
+            <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 199</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">McDonalds</h3>
+                    <h3 class="marginCard">4.4 20-25min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image2">
+                <div class="gradient"></div>
+                <div class="textBottom">50%-OFF</div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">KFC</h3>
+                <h3 class="marginCard">4.1 40-50min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image3">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">McDonalds Gourmet Burger...</h3>
+                <h3 class="marginCard">4.5 40-45min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image4">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> McCafe by McDonalds </h3>
+                <h3 class="marginCard">4.3 45-50min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+   
+        </div>
+        <div class="line" style="margin-top: 40px;"></div>
+
+        <div class="bold"><h2>Restaurants with online food delivery in Bangalore</h2></div>
+            <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image5">
+                    <div class="gradient"></div>
+                    
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Pizza Hut</h3>
+                    <h3 class="marginCard">4.5 55-65min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image6">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Ma Da Daba</h3>
+                <h3 class="marginCard">4.4 30-40min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image7">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Kanti Sweets </h3>
+                <h3 class="marginCard">4.6 35-40min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image8">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Anand Sweets Savouries& </h3>
+                <h3 class="marginCard">4.5 50-60min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+
+
+
+
+
+            
+            
+        </div>
+        </div>
+
+
+        <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image9">
+                    <div class="gradient"></div>
+                    
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Purani Dilli By Anand Sweets</h3>
+                    <h3 class="marginCard">4.4 35-40min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image10">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Thierd Wave Coffee</h3>
+                <h3 class="marginCard">4.5 40-45min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 199</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">McDonalds</h3>
+                    <h3 class="marginCard">4.4 20-25min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image11">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> A2B-Adyar Ananda Bhavan </h3>
+                <h3 class="marginCard">4.5 50-60min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+      
+            
+        </div>
+        </div>
+
+
+
+
+
+           <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image2">
+                    <div class="gradient"></div>
+                    
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard"> KFC</h3>
+                    <h3 class="marginCard">4.1 50-60min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image12">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Throbroma</h3>
+                <h3 class="marginCard">4.3 45-50min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image13">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Subway </h3>
+                <h3 class="marginCard">4.3 50-60min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image14">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Sharief Bhai Biriyani </h3>
+                <h3 class="marginCard">4.1 45-55mins</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+        
+            
+        </div>
+        </div>
+
+
+        <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image15">
+                    <div class="gradient"></div>
+                    
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Hotel Le Durbar</h3>
+                    <h3 class="marginCard">4.4 35-40min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image16">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">NMR's Uptpwn</h3>
+                <h3 class="marginCard">4.5 40-45min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image17">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 99</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">LunchBox-Meals and Thalis</h3>
+                    <h3 class="marginCard">4.4 20-25min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image18">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> The Good Boul </h3>
+                <h3 class="marginCard">4.5 50-60min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+           </div>
+           </div>
+
+
+            <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image19">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 80</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">The Magic Oven-Stadium Bypass</h3>
+                    <h3 class="marginCard">4.4 30-40min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image20">
+                <div class="gradient"></div>
+                <div class="textBottom">ITEMS AT 199</div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Sweet Turth-Cake and Desserts</h3>
+                <h3 class="marginCard">4.4 15-20min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image21">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 99</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Behrouz Biriyani</h3>
+                    <h3 class="marginCard">4.4 25-30min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image22">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Ibco</h3>
+                <h3 class="marginCard">4.6 10-15min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+   
+        </div>
+        </div>
+
+            <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image23">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 99</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">MM Kanjilada</h3>
+                    <h3 class="marginCard">4. 15-20min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image24">
+                <div class="gradient"></div>
+                <div class="textBottom"></div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Kapilavasthu Hotel</h3>
+                <h3 class="marginCard">4.5 15-20min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image25">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 99</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Top  in Town Family Restaurant</h3>
+                    <h3 class="marginCard">4.5 15-20min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image26">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Alakara HOt Grill Restaurant </h3>
+                <h3 class="marginCard">4.3 20-30min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+    
+            
+        </div>
+        </div>
+
+
+            <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image27">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 159</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">ITEMS AT 159</h3>
+                    <h3 class="marginCard">4.4 25-30min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image28">
+                <div class="gradient"></div>
+                <div class="textBottom">ITEMS AT 99</div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Alanker Hot Grill Restaurant</h3>
+                <h3 class="marginCard">4.4 15-20min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image29">
+                    <div class="gradient"></div>
+                    <div class="textBottom">60% OFF UPTO 120</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Nlanada Grill</h3>
+                    <h3 class="marginCard">4.4 25-30min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image30">
+                <div class="gradient"></div>
+                <div class="textBottom">70% OFF UPTO 130</div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Cafe Coffee Day </h3>
+                <h3 class="marginCard">4.2 25-30min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+       
+        </div>
+        </div>
+
+            <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image31">
+                    <div class="gradient"></div>
+                    <div class="textBottom">60%OFF UPTO 120</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Keerthy Vegetarian Hotel</h3>
+                    <h3 class="marginCard">4.4 25-30min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image32">
+                <div class="gradient"></div>
+                <div class="textBottom">60% OFF UPTO 120</div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Kadal Family Restarant</h3>
+                <h3 class="marginCard">4.3 25-30min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image33">
+                    <div class="gradient"></div>
+                    <div class="textBottom"></div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Sicial Kitchen-Taste of Udupi</h3>
+                    <h3 class="marginCard">4.5 20-25min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image34">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Monarch D Nine Restaurant </h3>
+                <h3 class="marginCard">4.3 20-30min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+
+
+
+
+
+            
+            
+        </div>
+        </div>
+
+
+
+
+         <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image35">
+                    <div class="gradient"></div>
+                    <div class="textBottom"></div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Social Ktchen</h3>
+                    <h3 class="marginCard">4.6 15-20min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image36">
+                <div class="gradient"></div>
+                <div class="textBottom">100 OFF UPTO 499</div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Looco's Pizza</h3>
+                <h3 class="marginCard">4.5 25-30min</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image37">
+                    <div class="gradient"></div>
+                    <div class="textBottom">ITEMS AT 64</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Top Notch Bakers</h3>
+                    <h3 class="marginCard">4.6 10-15min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image38">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Hotel Nlanda </h3>
+                <h3 class="marginCard">4.4 20-25 mins</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+         
+        </div>
+        </div>
+ 
+
+         <div class="cardContainer">
+                <div class="card1">
+
+                <div class="card">
+                <div class="image39">
+                    <div class="gradient"></div>
+                    <div class="textBottom">60% OFF UPTO 120</div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Soofi Mandi</h3>
+                    <h3 class="marginCard">4.3 20-25min</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+            
+            
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image40">
+                <div class="gradient"></div>
+                <div class="textBottom"></div>
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard">Al Reem Restaurant</h3>
+                <h3 class="marginCard">4.4 15-20 mins</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+          
+        </div>
+        <div class="card2">
+         <div class="card">
+                <div class="image41">
+                    <div class="gradient"></div>
+                    <div class="textBottom"></div>
+                </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Nmr'S Crossroads Restaurant An...</h3>
+                    <h3 class="marginCard">4.6 25-30 mins</h3>
+                    <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                </div>
+                </div>
+           
+            
+        </div>
+        <div class="card2">
+         <div class="card">
+            <div class="image42">
+                <div class="gradient"></div>
+                
+            </div>
+            <div class="cntCard">
+                <h3 class="marginCard"> Shree Anandhaas Sweets and... </h3>
+                <h3 class="marginCard">4.8 15-20 mins</h3>
+                <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+            </div>
+            </div>
+         
+        </div>
+        </div>
+
+
+        <div class="cardContainer">
+            <div class="card1">
+                <div class="card">
+                    <div class="image43">
+                        <div class="gradient"></div>
+                        <div class="textBottom">100 OFF ABOVE 299</div>
+                    </div>
+                    <div class="cntCard">
+                        <h3 class="marginCard">Lakshmanan's Fastfood</h3>
+                        <h3 class="marginCard">4.4.228-233 mins</h3>
+                        <p class="marginCard">Lorem ipsum <br> dolor, sit amet </p>
+
+                    </div>
+                    
+
+                </div>
+
+
+
+            </div>
+            <div class="card2">
+                <div class="card">
+                    <div class="image44">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+                    <div class="cntCard">
+                        <h3 class="marginCard">Shyn's Flavour's </h3>
+                        <h3 class="marginCard">4.2.30-35 mins</h3>
+                        <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card">
+                    <div class="image45 ">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+                    <div class="cntCard">
+                        <h3 class="marginCard">Tiffin corner </h3>
+                        <h3 class="marginCard">3.7 30-35 mins</h3>
+                        <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card">
+                    <div class="image46">
+                        <div class="gradient"></div>
+                        <div class="textBottom"> 30% OFF UPTO 75</div>
+
+                    
+                    </div>
+                <div class="cntCard">
+                    <h3 class="marginCard">Grizza Foods</h3>
+                    <h3 class="marginCard">4. 264-274 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="cardContainer">
+
+            <div class="card1">
+                <div class="card">
+                    <div class="image47">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+
+                
+                <div class="cntCard">
+                    <h3 class="marginCard">Maa's HOmly Kitchen</h3>
+                    <h3 class="marginCard">4.8 1018-1023</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card">
+                    <div class="image48">
+                        <div class="gradient"></div>
+                        <div class="textBottom">ITEMS AT 155</div>
+
+                    </div>
+
+                
+                <div class="cntCard">
+                    <h3 class="marginCard">Gazala Rstaurant</h3>
+                    <h3 class="marginCard">4.5 1098-1103 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card">
+                    <div class="image49">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+
+               
+                <div class="cntCard">
+                    <h3 class="marginCard">Selvan Tea Stall</h3>
+                    <h3 class="marginCard">4.8 1138-1143 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                 </div>
+
+            </div>
+            <div class="card2">
+                <div class="card">
+                    <div class="image50">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+
+               
+                <div class="cntCard">
+                    <h3 class="marginCard">Gowri Cafe</h3>
+                    <h3 class="marginCard">4.6 1158-1163 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                 </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="cardContainer">
+            <div class="card2">
+                <div class="card">
+                    <div class="image51">
+                        <div class="gradient"></div>
+                        <div class="textBottom">50 OFF ABOVE 249</div>
+
+                    </div>
+
+
+                <div class="cntCard">
+                    <h3 class="marginCard">Team Time Hub</h3>
+                    <h3 class="marginCard">4.2 40-45 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                </div>
+
+
+            </div>
+
+            <div class="card2">
+                <div class="card">
+                    <div class="image52">
+                        <div class="gradient"></div>
+                        <div class="textBottom"> 40% OFF UPTO 80</div>
+
+                    </div>
+
+               
+                <div class="cntCard">
+                    <h3 class="marginCard">KL 09 Biriyani</h3>
+                    <h3 class="marginCard"> 20-25 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                 </div>
+                
+
+
+            </div>
+
+            <div class="card2">
+                <div class="card">
+                    <div class="image53">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+
+                
+                <div class="cntCard">
+                    <h3 class="marginCard">Hotel Sri Ashok Bhavan</h3>
+                    <h3 class="marginCard">4.4 20-25 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="card2">
+                <div class="card">
+                    <div class="image54">
+                        <div class="gradient"></div>
+                        <div class="textBottom"></div>
+
+                    </div>
+
+                
+                <div class="cntCard">
+                    <h3 class="marginCard">Star Pizza Fried Chicken SFC</h3>
+                    <h3 class="marginCard">4.8 35-40 mins</h3>
+                    <p class="marginCard">Lorem ipsum <br> dolor, sit amet</p>
+
+                </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        </section>
+
+
+
+        <section class="box">
+            <div class="boxX">
+            <h2 class="boxHead">Best Places to Eat Across Cities</h2>
+
+
+            <div class="boxCoontainer">
+                <div class="boxCoontainer1">
+                    <div class="box1">
+                        <p class="margnCard"><b>Best Restaurants in<br> Bangalore</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Pune</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Mumbai</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Delhi</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="boxCoontainer1">
+                    <div class="box1">
+                        <p class="margnCard"><b>Best Restaurants in<br> Hyderabad</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Kolkata</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Chennai</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 60px;"><b>Best Restaurants in Chandigarh</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="boxCoontainer1">
+                    <div class="box1">
+                        <p class="margnCard"><b>Best Restaurants in<br> Ahmedabad</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Jaipur</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Nagpur</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Best Restaurants in Kerala</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+            </div>
+
+
+
+
+
+            <div class="boxX">
+            <h2 class="boxHead">Best Cuisines Near Me</h2>
+
+
+            <div class="boxCoontainer">
+                <div class="boxCoontainer1">
+                    <div class="box2">
+                        <p class="margnCard" style="height: 40px;"><b>Chinese Restaurant Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box1">
+                         <p class="margnCard "><b>South Indian Restaurant Near<br>Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Indian Restarant Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Kerala Restaurants Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="boxCoontainer1">
+                    <div class="box2">
+                        <p class="margnCard" style="height: 40px;"><b>Korean Restaurants Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box1">
+                         <p class="margnCard " ><b>North Indian Restaurant Near<br>Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Seafood Restaurants Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 60px;"><b>Bengali Restaurants Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="boxCoontainer1">
+                    <div class="box2">
+                        <p class="margnCard" style="height: 40px;"><b>Panjabi Restarant Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Italian Restaurants Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Andhra Restaurant Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                     <div class="box2">
+                         <p class="margnCard " style="height: 40px;"><b>Tamilnadu Restaurants Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            
+            </div>
+
+
+            <div class="boxX">
+            <h2 class="boxHead">Explore Every Restaurants Near Me</h2>
+
+
+            <div class="boxCoontainer">
+                <div class="boxCoontainer1">
+                    <div class="box2">
+                        <p class="margnCard" style="height: 40px;"><b>Explore Restarant Near Me</b>
+                            
+                        </p>
+
+
+                    </div>
+                    <div class="box1">
+                         <p class="margnCard " ><b>Best Restaurants in<br> Bangalore</b>
+                            
+                        </p>
+
+
+                    </div>
+
+
+                    </div>
+
+                </div>
+
+        </section>
+
+        </div>
+
+        <div class="container2">
+            <div class="line2">
+
+        </div>
+            <section class="footer">
+                <div class="footHead">
+                <div class="leftHead">
+                <h2 style="color: rgb(43, 42, 42);">For better experience,download the Swiggy app now</h2>
+                </div>
+                <div class="rightHead">
+                    <img src="assets\img\Screenshot 2026-01-29 153945.png" alt="apps">
+
+                </div>
+                </div>
+                <div class="footerContent">
+                    <div class="footerFlex">
+                        <div class="fList1">
+
+                            <div class="footerImg">
+                                <img src="assets\img\Screenshot 2026-01-02 144342.png" alt="swiggy">
+                                <h1>Swiggy</h1>
+
+                            </div>
+                            <p>&copy;Swiggy Limitted</p>
+
+
+                        </div>
+                        <div class="fList2">
+                            <h3>
+                                Company
+                            </h3>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Swiggy Corparate</li>
+                                <li>Careers</li>
+                                <li>Team</li>
+                                <li>Swiggy One</li>
+                                <li>Swiggy Instamart</li>
+                                <li>Swiggy Dineout</li>
+                                <li>Swiggy Genie</li>
+                                <li>Minis</li>
+                                <li>Pyng</li>
+                            </ul>
+                           
+                            
+                        </div>
+                        <div class="fList3">
+                            <h3>Contact us</h3>
+                            <ul>
+                                <li>Help & Support</li>
+                                <li>Partner with us</li>
+                                <li>Ride with us</li>
+                            </ul>
+
+
+
+
+                             <h3 style="margin-top: 140px;">Legal</h3>
+                            <ul>
+                                <li>Terms& Conditions</li>
+                                <li>Cookie Policy</li>
+                                <li>Privacy Policy</li>
+                                <li>Investor Relations</li>
+                            </ul>
+
+                        </div>
+                        <div class="fList4">
+                           <h3> Available in:</h3>
+                           <ul>
+                            <li>Bangalore</li>
+                            <li>Gurgaon</li>
+                            <li>Hyderabad</li>
+                            <li>Delhi</li>
+                            <li>Mumbai</li>
+                            <li>Pune</li>
+                           </ul>
+
+                        </div>
+                        <div class="fList5">
+                           <h3> Life at Swiggy</h3>
+                           <ul>
+                            <li>Explore with swiggy</li>
+                            <li>Swiggy News</li>
+                            <li>Snackables</li>
+                           </ul>
+                           <h3 style="margin-top: 140px; margin-left: 30px;">Social Links</h3>
+                           <img src="assets\img\Screenshot 2026-01-22 145522.png" alt="social">
+
+                        </div>
+                    
+                  
+                    
+                     </div>
+
+                </div>
+
+
+            </section>
+
+        </div>
+        
+
+
+    </body>
+</html>

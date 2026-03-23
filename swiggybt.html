@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Examplefor swiggy</title>
+        <link rel="stylesheet" href="boot.css"><!--bts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--sbls-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <style>
+        
+        
+        .navbar{
+            z-index: 1;
+            
+        }
+        
+            .line{
+                height: 1px;
+                
+            }
+            .line2{
+                width: 90%;
+            }
+            .img{
+                width: 100%;
+                 height: 200px;
+                 
+
+            }
+            .img2{
+                filter: grayscale(1);
+            }
+            
+            .image-container{
+                border-radius: 10px;
+                overflow: hidden;
+
+            }
+            .card{
+                width: 100%;
+                transition: transform 0.3s ease,box-shadow 0.3s ease ;
+
+            }
+            .card:hover{
+                 transform: scale(1.05);
+            }
+            .gradient{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+
+            }
+            .image-container {
+            position: relative;
+            width: 100%;
+            }
+
+            .gradient{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+
+            }
+
+            .textBottom {
+              position: absolute;
+              bottom: 10px;
+              left: 15px;
+              color: #fff;
+              font-weight: bold;
+            }
+            
+
+            
+            .rightHead img{
+                width: 50%;
+                
+            }
+            .swiggy{
+                color: tomato;
+            }
+            .foot-list ul li{
+                list-style: none;
+
+            }
+            .ftr{
+                margin: 0;
+                padding: 0;
+                background-color:  rgb(239, 238, 238);
+            }
+            .apps img{
+                width: 80%;
+                transition: transform 0.3s ease;
+            }
+            .apps img:hover{
+                transform: scale(1.20);
+            }
+            .social img{
+                transition: transform 0.3s ease;
+            }
+            .social img:hover{
+                transform: scale(1.20);
+            }
+            .footer{
+                width: 90%;
+            }
+            .btns{
+                display: none;
+            }
+            #mynavbar :hover{
+                color: orangered;
+
+            }
+           .nav-link:hover{
+            color: orangered !important;
+           }
+           .navbar-brand img{
+            position: relative;
+            transition: transform 0.3s ease;
+           }
+           .navbar-brand img:hover{
+            transform:scale(1.20) ;
+           }
+           .btns button{
+            position: relative;
+            transition: transform 0.3s ease;
+           }
+           .btns button:hover{
+            transform:scale(1.20) ;
+           }
+           .social img{
+            width: 50%;
+            
+           }
+           .scroll3 img{
+            height: 100%;
+           }
+           @media (max-width: 992px) {
+            .dropDown{
+                display: none;
+            }
+            .btns{
+                display: contents;
+            }
+            
+
+
+
+
+           }
+           
+           
+
+           
+  
+           
+           
+          
+            
+
+    </style>
+
+
+    <body>
+        
+        
+            <nav class="navbar navbar-expand-lg fixed-top bg-light ">  
+                <div class="container-fluid ">
+                    <div class="navbar-brand ms-1 ms-lg-5">
+                        <a href="swiggy"><img src="assets\img\Screenshot 2026-01-02 144342.png" alt="swiggy" style="width:40px;" class="rounded-pill me-3"></a>
+                
+
+                    </div> 
+                    <div class="btns">
+                            <button type="button" class="btn btn-warning">Search<i class="fa fa-search "></i></button>
+                        </div>   
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  " id="mynavbar">
+      
+                        <div class="dropDown me-auto">
+                            <label for="location">other</label>
+                                 <select name="location" id="location">
+                                    <option value="cherpulasery,palakad,kerala">cherpulasery,palakad,kerala</option>
+                                    <option value="painkulam,thrissur,kerala">painkulam,thrissur,kerala</option>
+                                    <option value="vallathol,thrissur,kerala">vallathol,thrissur,kerala</option>
+                                    <option value="manapadi,thrissur,kerala">manapadi,thrissur,kerala</option>
+                                 </select>
+
+                        </div>
+                        
+                        <ul class="navbar-nav me-5">
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-dark "  href="javascript:void(0)">Swiggy corporate</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-dark " href="javascript:void(0)">Search</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                 <a class="nav-link text-dark " href="javascript:void(0)">Offers<sup class="text-warning">New</sup></a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-dark " href="javascript:void(0)">Help</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-dark " href="javascript:void(0)">Sign</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link text-dark " href="javascript:void(0)">Cart</a>
+                            </li>
+        
+                        </ul>
+                        
+                    </div>
+                
+                </nav>
+                
+                <div class="container">
+                    
+                
+        <section class="scroll container-fluid   " >
+            <div class="row scroll3 ">
+
+            <div class="scrollText mt-5">
+                <h5 class="mt-5">What's on your mind?</h5>
+
+            </div>
+           <div class="col-sm-3 ">
+                <img src="assets/img/awg1.avif" alt="biriyani" class="img-fluid">
+           </div>
+           <div class="col-sm-3">
+                <img src="assets/img/swg2.avif" alt="burger" class="img-fluid">
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/img/swg3.avif" alt="cake" class="img-fluid">
+            </div>
+            <div class="col-sm-3">
+                <img src="assets/img/swg4.avif" alt="pizzas" class="img-fluid">
+            </div>
+           
+            </div>
+
+        </section>
+        <div class="line bg-secondary"></div>
+        <section class="ScrollImage container-fluid">
+            
+                <h5 class="mt-5">Top restaurant chains in Bangalore</h5>
+            <div class="row">
+                <div class="cardContainer col-md-3 mt-3" >
+                    <div class="card border border-white" >
+                        <div class="image-container">                       
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/3/724c1f4c-da2b-4140-9929-cd47c1747b3d_334355.JPG" alt="image1" class="card-img-top img " >
+                            <div class="gradient"></div>
+                            <div class="textBottom">ITEMS AT 199</div>
+                        </div>
+                        <div class="cntCard">
+                            <h4 class="marginCard">McDonalds</h4>
+                            <h5 class="marginCard">4.4 20-25min</h5>
+                            <p class="marginCard">Lorem ipsum dolor sit amet and it consectetur </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/17/2ae66bad-edeb-4a91-a18f-7a8fee90ea7d_857384.JPG" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        <div class="textBottom">50%-OFF</div>
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>KFC</h4>
+                	        <h5>4.1 40-50min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kdqyks4icf1y6ysfmxcp" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>McDonalds Gourmet Burger...</h4>
+                	        <h5>4.5 40-45min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur</p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/19/92ff288d-e8eb-4492-ae4f-4a778d2abe2e_410401.jpg" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> McCafe by McDonalds</h4>
+                	        <h5>4.3 45-50min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+                <div class="line bg-secondary mt-2"></div>
+
+
+                <h4 class="mt-3">Restaurants with online food delivery in Bangalore</h4>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/d8657a5a-e134-42ce-975a-f2038743ba5d_856913.JPG" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Pizza Hut</h4>
+                	        <h5>4.5 55-65min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/f070323750b77547608c09a881fb2b71" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Ma Da Daba</h4>
+                	        <h5>4.4 30-40min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/9/3/76a974e3-3993-4bad-b5ad-234aef764b04_1194358.jpg" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Kanti Sweets </h4>
+                	        <h5>4.6 35-40min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/h5bjgvy7zqpcveulhhc1" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Anand Sweets & Savouries </h4>
+                	        <h5>4.5 50-60min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/53185382-9f4f-4e97-9df6-e17a360c99ea_717531.jpg" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Purani Dilli By Anand Sweets </h4>
+                	        <h5>4.4 35-40min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/15/6129106a-cf6e-4640-ae40-56096873d3ef_468682.JPG " alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Thierd Wave Coffee </h4>
+                	        <h5>4.5 40-45min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/3/724c1f4c-da2b-4140-9929-cd47c1747b3d_334355.JPG " alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> McDonalds </h4>
+                	        <h5>4.4 20-25min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/29/84c20fc6-d97d-4451-b489-fa3286dcf386_365616.JPG" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> A2B-Adyar Ananda Bhavan </h4>
+                	        <h5>4.5 50-60min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/17/2ae66bad-edeb-4a91-a18f-7a8fee90ea7d_857384.JPG" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> KFC </h4>
+                	        <h5>4.1 50-60min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/26/64097150-0192-4930-90a6-a5c0d150eabe_1161699.JPG" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Throbroma </h4>
+                	        <h5>4.3 45-50min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/b8ac68a6-dd71-4344-8293-55a3c0b89576_1005858.jpg" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Subway</h4>
+                	        <h5>4.3 50-60min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/27/3439b908-95d7-4941-aab1-2b8a7b761fcd_963762.JPG" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Sharief Bhai Biriyani </h4>
+                	        <h5>4.1 45-55mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/5/14/601eabbf-883b-43a9-af59-ce4f9fa50e53_1095354.jpg" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> Hotel Le Durbar </h4>
+                	        <h5>4.4 35-40min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/31/c7013dd7-f8c4-418c-b39f-c175774317ed_935424.jpg" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4> NMR's Uptpwn </h4>
+                	        <h5>4.5 40-45min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1b0a9f247600e1ac5b1a277500ce73dd" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>LunchBox-Meals and Thalis</h4>
+                	        <h5>4.4 20-25min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/dbcc40008450546fb34e16037840177c" alt="img2" class="card-img-top img "> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>The Good Boul</h4>
+                	        <h5>4.5 50-60min</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2025/11/1/2b3d72f1-ddfb-493c-b5a0-629d62524289_1250956.jpg" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Maa's HOmly Kitchen</h4>
+                	        <h5>4.8 1018-1023</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/n3d4cf77iguoh6surw9o" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Gazala Rstaurant</h4>
+                	        <h5>4.5 1098-1103 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/19/b3e41bd7-801d-4cb4-a113-15d8a5c8401f_954435%20(1).jpg" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Selvan Tea Stall</h4>
+                	        <h5>4.8 1138-1143 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/amwls3cshehk41mrchtd" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Gowri Cafe</h4>
+                	        <h5>4.6 1158-1163 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/7/3e886796-4bb4-42b2-9493-7cef25b55481_904882.jpg" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Team Time Hub</h4>
+                	        <h5>4.2 40-45 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/17/40d22711-8bed-4861-ae71-b8467bfae055_1149421.jpg" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>KL 09 Biriyani</h4>
+                	        <h5>20-25 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2025/7/19/a9837326-aced-4e0f-9189-4a9f8ef1fdd5_1151368.jpg" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Hotel Sri Ashok Bhavan</h4>
+                	        <h5>4.4 20-25 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3">
+                    <div class="card border border-white">
+		                <div class="image-container">
+            		        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660,e_grayscale/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/8/a72ea87f-519e-4e86-85aa-6c22c3f6f6eb_938835.jpg" alt="img2" class="card-img-top img img2"> 
+                	        <div class="gradient"></div>
+                	        
+            	        </div>
+            	        <div class="cntCard">
+                	        <h4>Star Pizza Fried Chicken SFC</h4>
+                	        <h5>4.8 35-40 mins</h5>
+                            <p>Lorem ipsum dolor sit amet and it consectetur </p>
+            	        </div>
+                    </div>
+                </div>
+
+
+                <h4 class="mt-3 mb-5">Best Places to Eat Across Cities</h4>
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2 ">Best Restaurants in <br> Bangalore</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Pune</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Mumbai</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Delhi</h6>
+                </div>
+
+                 <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in<br> Hyderabad</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Kolkata</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Chennai</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Chandigarh</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in<br> Ahmedabad</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Jaipur</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Nagpur</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in Kerala</h6>
+                </div>
+
+                <h4 class="mt-3 mb-5">Best Cuisines Near Me</h4>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Chinese Restaurant Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">South Indian Restaurant Near<br>Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Indian Restarant Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Kerala Restaurants Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Korean Restaurants Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">North Indian Restaurant Near<br>Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Seafood Restaurants Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Bengali Restaurants Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Panjabi Restarant Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Italian Restaurants Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Andhra Restaurant Near Me</h6>
+                </div>
+
+                <div class="cardContainer col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Tamilnadu Restaurants Near Me</h6>
+                </div>
+
+                <h4 class="mt-3 mb-5">Best Cuisines Near Me</h4>
+
+                <div class=" col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Explore Restarant Near Me</h6>
+                </div>
+
+                <div class=" col-md-3 mt-3 mb-4">
+                    <h6 class="w-1 border border-2 h-100 rounded-4 ps-5 pt-2">Best Restaurants in<br> Bangalore</h6>
+                </div>
+
+                <div class="line line2 bg-secondary mt-4 ms-5"></div>
+            </div>
+        </section>
+
+
+        </div>
+        <div class="ftr m-0 p-0">
+
+
+               <div class="container-fluid footer">
+                    <div class="row align-items-center ">
+                        <div class="col-12 col-md-6 mb-3 mb-md-0 ms-md-0 text-center text-md-start">
+                            <h4 class="ms-3">For better experience, download the Swiggy app now</h4>
+                        </div>
+                        <div class="col-12 col-md-6 text-center text-md-end apps mt-3">
+                            <a href="apps"><img   src="assets\img\Screenshot 2026-01-29 153945.png" alt="apps"> </a>                   
+                            </div>
+    
+                    </div>
+                    <div  class="row">
+                        <div class="col-sm-4 mt-5 ms-5 ms-md-0">
+                            <div class="d-flex mt-5 ms-5 ms-md-0 ">
+                                <a href="swig"><img  src="assets\img\Screenshot 2026-01-02 144342.png" alt="swiggy" style="width:40px;" class="rounded-pill me-3 swiggy2"></a>
+                                <h2 class="swiggy">Swiggy</h2>
+                            </div>
+                            <p class="ms-5 ms-md-0">©Swiggy Limitted</p>
+
+                        </div>
+                        <div class="col-md-2 foot-list mt-5 ms-5 ms-md-0">
+                            <h3 class="mt-5 ms-5 ms-md-0">
+                                Company
+                            </h3>
+                            <ul class="list ms-5 ms-md-0">
+                                <li class="list-item mb-1">About Us</li>
+                                <li class="list-item mb-1">Swiggy Corparate</li>
+                                <li class="list-item mb-1">Careers</li>
+                                <li class="list-item mb-1">Team</li>
+                                <li class="list-item mb-1">Swiggy One</li>
+                                <li class="list-item mb-1">Swiggy Instamart</li>
+                                <li class="list-item mb-1">Swiggy Dineout</li>
+                                <li class="list-item mb-1">Swiggy Genie</li>
+                                <li class="list-item mb-1">Minis</li>
+                                <li class="list-item mb-1">Pyng</li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="col-md-2 foot-list mt-5 ms-5 ms-md-0">
+                            <h3 class="mt-5 ms-5 ms-md-0">
+                                Contact us
+                            </h3>
+                            <ul class="list mb-5 ms-5 ms-md-0">
+                                <li class="list-item mb-1">Help & Support</li>
+                                <li class="list-item mb-1">Partner with us</li>
+                                <li class="list-item mb-5">Ride with us</li>
+
+                            </ul>
+
+                            <h3 class="mt-5 ms-5 ms-md-0">Legal </h3>
+                             <ul class="list ms-5 ms-md-0">
+                                <li class="list-item mb-1">Terms& Conditions</li>
+                                <li class="list-item mb-1">Cookie Policy</li>
+                                <li class="list-item mb-1">Privacy Policy</li>
+                                <li class="list-item mb-1">Investor Relations</li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="col-md-2 foot-list mt-5 ms-5 ms-md-0">
+                            <h3 class="mt-5 ms-5 ms-md-0">Available in: </h3>
+                            <ul class="list mb-5 ms-5 ms-md-0">
+                                <li class="list-item mb-1">Bangalore</li>
+                                <li class="list-item mb-1">Gurgaon</li>
+                                <li class="list-item mb-1">Hyderabad</li>
+                                <li class="list-item mb-1">Delhi</li>
+                                <li class="list-item mb-1">Mumbai</li>
+                                <li class="list-item mb-1">Pune</li>
+
+                            </ul>
+
+
+                        </div>
+
+
+                        <div class="col-md-2 foot-list mt-5 ms-5 ms-md-0 social">
+                            <h3 class="mt-5 ms-5 ms-md-0">
+                                Life at Swiggy
+                            </h3>
+                            <ul class="list mb-5 ms-5 ms-md-0">
+                                <li class="list-item mb-1">Explore with swiggy</li>
+                                <li class="list-item mb-1">Swiggy News</li>
+                                <li class="list-item mb-5">Snackable</li>
+
+                            </ul>
+
+                            <h3 class="mt-5 sls ms-md-0 ">Social Links </h3>
+                             <img style="cursor: pointer;" src="assets\img\Screenshot 2026-01-22 145522.png" alt="social">
+
+                        </div>
+
+                     
+                    </div>
+
+
+                </div>
+
+        </div>
+        
+
+
+    </body>
+
+</html>
